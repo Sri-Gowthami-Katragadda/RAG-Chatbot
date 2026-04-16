@@ -103,12 +103,15 @@ The chatbot will run on:
 
 http://localhost:8501
 
+
 🧪 Example Questions
 What is the leave policy?
 What are the working hours?
 What are the working days?
 What is the travel policy?
 What is the dress code policy?
+
+
 🧠 How RAG Works (Simple Explanation)
 PDF is loaded and split into chunks
 Each chunk is converted into embeddings
@@ -116,6 +119,8 @@ Embeddings are stored inside FAISS vector database
 When user asks a question, FAISS retrieves relevant chunks
 Retrieved chunks are passed as context to Mistral LLM
 LLM generates accurate answer from context
+
+
 ⚡ Notes
 First response may be slow because Ollama loads the model into memory.
 After that, responses become faster.
